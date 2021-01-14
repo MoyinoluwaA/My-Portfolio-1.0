@@ -33,6 +33,7 @@ h2 {
 }
 #profileimg {
     border-radius: 50%;
+    border: 5px solid black;
     width: 60%;
     justify-self: center;
 }
@@ -88,6 +89,10 @@ img {
     padding: 1em;
     text-align: justify;
     line-height: 1.5em;
+}
+.links {
+    text-decoration: none;
+    color: black;
 }
 #contact {
     margin: 2em 0;
