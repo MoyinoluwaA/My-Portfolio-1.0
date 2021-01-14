@@ -50,6 +50,7 @@ h2 {
     border-radius: 20px;
     color:white;
     align-items: center;
+    text-align: justify;
 }
 #abouttext-content {
     align-content: center
