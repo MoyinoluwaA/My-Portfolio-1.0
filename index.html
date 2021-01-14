@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
+    <title>Moyin Portfolio</title>
+</head>
+<body>
+    <div>
+        <header>
+            <nav id="nav-section">
+                <div id="portfolio-logo">Moyinoluwa Adenuga</div>
+                <ul id="nav-list">
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="about">
+                <div id="bg-about">
+                    <div id="profilepic">
+                        <img id="profileimg" src="Images/Moyin.png" alt="Moyin picture">
+                    </div>
+                    <div id="about-text">
+                        <div id="abouttext-content">
+                            <p class="intro">Hello! I am Moyin!</p>
+                            <p class="intro">I am a web developer.</p>
+                            <p class="intro">The curiousity to find out how web and mobile apps were being created spurred 
+                            my journey into the tech space.</p>
+                            <p class="intro">I am skilled in Html, CSS, Javascript, ReactJs and using Firebase for storage 
+                            and authentication to create beautiful websites</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="portfolio">
+                <h2 id="portfolio-title">PROJECTS</h2>
+                <div id="project-section">
+                    <div class="project-tile">
+                        <div class="project-img">
+                            <img src="Images/Project.png" alt="Picture of Project 1" >
+                        </div>
+                        <div class="project-description">
+                            <h2 class="project-title">Ladies Mental Support</h2>
+                            <p>This is a mental support website focused on helping ladies through hard times. It was created using React by a team of 5 and I worked on the landing page(excluding navbar) and live chat functionality.</p>
+                            <div>
+                                <button><a href="https://github.com/MoyinoluwaA/ladiesMentalSupport" target="_blank"></a>View Code</button>
+                                <button><a href="https://ladiesmentalsupport.netlify.app/" target="_blank"></a>View Site</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tile">
+                        <div class="project-img">
+                            <img src="Images/Project2.png" alt="Picture of Project 2" >
+                        </div>
+                        <div class="project-description">
+                            <h2 class="project-title">Vindicated Investment</h2>
+                            <p>This is a business site for an imaginary investment company. It was created using React and Firebase.</p>
+                            <div>
+                                <button><a href="https://github.com/MoyinoluwaA/vindicated" target="_blank"></a>View Code</button>
+                                <button><a href="https://vindicated.vercel.app/" target="_blank"></a>View Site</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tile">
+                        <div class="project-img">
+                            <img src="Images/Project3.png" alt="Picture of Project 3" >
+                        </div>
+                        <div class="project-description">
+                            <h2 class="project-title">Terrarium</h2>
+                            <p>A simple drag and drop feature for a terrarium.It was created using html, CSS and JavaScript.</p>
+                            <div>
+                                <button><a href="https://github.com/MoyinoluwaA/Terrarium" target="_blank"></a>View Code</button>
+                                <button><a href="https://terrariumproject.netlify.app/" target="_blank"></a>View Site</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="contact">
+                <h2 id="portfolio-title">CONTACT</h2>
+                <form id="contact-form">
+                    <label class="form-field" for="name">Name</label><br>
+                    <input class="form-field" id="name" name="name" type="text" placeholder="Name" required><br><br>
+
+                    <label class="form-field" for="email">Email</label><br>
+                    <input class="form-field" id="email" name="email" type="email" placeholder="Email address" required><br><br>
+
+                    <label class="form-field" for="message">Message</label><br>
+                    <textarea class="form-field" name="message" id="message" placeholder="Type your message here..." required></textarea>
+                    <div id="form-btn">
+                        <button class="submit-btn" type="button" onclick="alert('Thanks for contacting me. I will get back to you soon.')">SEND</button>
+                    </div>
+                </form>
+                <ul id="contact-info">
+                    <li>
+                        <a class="contact-link" href="https://www.linkedin.com/in/moyinoluwa-adenuga/" target="_blank">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i><span class="remove">LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contact-link" href="https://twitter.com/moyinoluwa_" target="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i><span class="remove">Twitter</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contact-link" href="https://github.com/MoyinoluwaA" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i><span class="remove">GitHub</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contact-link" href="mailto:dayoh14@gmail.com" target="_blank">
+                            <i class="fa fa-at" aria-hidden="true"></i><span class="remove">Send a mail</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="contact-link" href="/" target="_blank">
+                            <i class="fa fa-whatsapp" aria-hidden="true"></i><span class="remove">Whatsapp</span>
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer id="footer" >
+            <div id="footer-body" >&#169; Moyinoluwa Adenuga 2021</div>
+        </footer>
+    </div>
+</body>
+</html>
