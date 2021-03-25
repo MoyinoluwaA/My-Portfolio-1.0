@@ -1,26 +1,28 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0px;
+    font-size: 18px;
+    background: rgba(240, 238, 238, 0.5);
 }
-h2 { 
-    font-family: "Raleway";
+
+* {
+    box-sizing: border-box;
 }
+
 #nav-section {
     display: flex;
     justify-content: space-between;
+    padding-right: 2em;
 }
+
 #portfolio-logo {
-    font-family: 'Dancing Script', cursive;
     margin-left: 2em;
     align-self: center;
     font-size: 1.4em;
+    text-decoration: none;
+    color:rgba(224, 24, 96, 0.7)
 }
-#nav-list {
-    display: flex;
-    list-style: none;
-    justify-content: flex-end;
-    margin-right: 2em;
-}
+
 .nav-link {
     text-decoration: none;
     margin: 0 1.5em;
@@ -32,51 +34,116 @@ h2 {
     height: 100%;
 }
 #profileimg {
-    border-radius: 50%;
     border: 5px solid black;
-    width: 60%;
-    justify-self: center;
+    border-left: none;
 }
-#bg-about {
-    display: grid;
-    grid-template-columns: 40% 60%; 
-    grid-template-rows: 350px;
-    height: 350px;
+
+main {
     background: rgba(240, 238, 238, 0.5);
 }
-#about-text {
+
+#intro {
+    padding: 3em 0 0;
+    height: 755px;
+}
+#bg-intro {
+    display: grid;
+    grid-template-columns: 40% 60%; 
+    grid-template-rows: 500px;
+}
+#intro-text {
     padding: 2em;
-    background-color: black;
-    width:80%;
+    background-color: rgba(224, 24, 96, 0.7);
+    width:70%;
+    margin: 3em auto;
     border-radius: 20px;
     color:white;
     align-items: center;
-    text-align: justify;
 }
-#abouttext-content {
+.important {
+    text-transform: uppercase;
+    font-size: 20px;
+    color:#000;
+}
+.location {
+    margin-top: 0;
+}
+.custom-btn {
+    padding: 10px 25px;
+    border-radius: 20px;
+    border: none;
+    color:#e01860;
+    font-size: 20px;
+}
+.custom-btn:focus {
+    outline: none;
+}
+
+#introtext-content {
     align-content: center
 }
 .intro {
     margin: 1em;
 }
-#portfolio-title {
-    text-align:center;
-    margin-top: 1.5em;
+#about {
+    width: 70%;
+    margin: 3em auto 4em;
 }
+.about {
+    margin-bottom: 1em;
+}
+.connect {
+    width: 70%;
+    margin: 3em auto;
+}
+
+.contact {
+    list-style: none;
+    display: flex;
+    text-align: center;
+    padding: 0;
+}
+
+.contact a {
+    font-size: 3.5em;
+    margin:0 10px; 
+}
+
+#about h2,
+#portfolio h2,
+#contact h2 {
+    display: inline;
+}
+
+.line {
+    width: 40px;
+    height: 4px;
+    background-color: #e01860;
+    display: inline-block;
+    margin: 5px;
+}
+
+.portfolio-title {
+    width: 70%;
+    margin: 0 auto;
+}
+
 #project-section {
     width: 80%;
-    margin: 1em auto;
+    margin: 3em auto 4em;
     padding: 0.8em 0 0.1em;
     background-color: #e01860;
 }
+
 .project-tile {
-    width:99%;
-    height: 230px;
-    margin: 0em auto 1.2em;
-    background-color: black;
-    color: white;
+    width:98%;
+    height: 250px;
+    margin: 0em auto 1.3em;
+    background-color: rgb(0,0,0);
+    color: #fff;
     display:flex;
 }
+
 .project-img {
     width:50%;
 }
@@ -87,86 +154,215 @@ img {
 .project-description {
     width:50%;
     padding: 1em;
-    text-align: justify;
     line-height: 1.5em;
 }
+
+.project-description button {
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
 .links {
     text-decoration: none;
     color: black;
 }
+
 #contact {
-    margin: 2em 0;
+    margin: 2em 0 0;
+    padding-bottom: 3em;
 }
+
+.contact-content {
+    display: flex;
+    width: 70%;
+    margin: 1em auto 0;
+    align-items: center;
+}
+
 #contact-form {
-    width: 40%;
-    margin: 0px auto;
-    padding: 1.3em;
-    border: 1px solid black;
-    border-radius: 20px;
+    width: 550px;
+    margin: 2em auto;
+    padding: 2em 2.5em;
+    border: 1px solid rgb(65, 64, 64);
 }
+
 input {
-    width: 95%;
+    height: 46px;
+    width: 100%;
+    padding: 8px 15px;
+    margin-top: 0.5em;
+    font-size: 18px;
 }
-.form-field {
-    line-height: 1.4em;
-    padding: 0.3em;
-    margin: 0.2em 0 0.7em;
+
+textarea:focus,
+input:focus {
+    outline: none;
 }
+
 #message {
-    width: 95%;
+    width: 100%;
     height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+    margin-top: 0.5em;
 }
-#form-btn {
-    text-align: center;
-}
+
 .submit-btn {
-    padding: 0.2em 1.3em;
-    margin: 0.5em;
-    background-color: black;
-    color: white;
+    background-color: #fff;
+    margin-top: 1em;
+    border: 1px solid#e01860;
 }
 #contact-info {
     list-style: none;
     display:flex;
-    width:28%;
-    margin: 1em auto;
+    flex-direction: column;
+    row-gap: 15px;
     font-size:1.1em;
     text-align: center;
+    padding: 0;
+    /* width: 70%; */
+    
 }
+
+.sm-links {
+    text-align: center;
+    width: 50%;
+}
+
+.sm-links p {
+    margin-bottom: 3em;
+}
+
+#contact-info i {
+    margin-right: 0.5em;
+}
+
 .contact-link {
     text-decoration: none;
     color:black;
-    margin:0 30px;
+    
 }
 #footer {
     background-color: black;
     color: white;
     text-align: center;
-    height: 50px;
 }
 #footer-body {
     padding:1em;
+    font-size: 15px;
 }
 
-@media only screen and (max-width:750px) {
-    #bg-about {
+@media only screen and (max-width:1200px) {
+    #intro {
+        height: fit-content;
+        padding-bottom: 3em;
+    }
+
+    #intro-text {
+        width: 85%;
+        margin-top: 2em;
+    }
+
+    .connect {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:992px) {
+    button:focus {
+        outline: none;
+    }
+    #intro {
+        padding-bottom: 0;
+    }
+    .intro {
+        margin: 0;
+    }
+    #intro-text {
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+    .contact-content {
+        width: 85%;
+    }
+
+    #contact-form {
+        width: 450px;
+    }
+
+    .contact a {
+        font-size: 2.5em;
+    }
+
+    .connect {
+        display: block;
+        margin: 1em 2em;
+    }
+
+    #project-section {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    #nav-section {
+        padding-right: 5px;
+    }
+    #portfolio-logo {
+        margin: 0;
+    }
+    #profileimg {
+        border: none;
+    }
+    .important {
+        font-size: 18px;
+    }
+    #profilepic {
+        order: 2;
+    }
+    #intro {
+        padding: 0;
+    }
+    .intro {
+        order: 1;
+        margin: 0;
+    }
+    #intro-text {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding: 2em 1em;
+    }
+    #bg-intro {
+        grid-template-rows: auto;
+        grid-template-columns: none;
+        height: auto;
+    }
+    #about {
+        width: 90%;
+    }
+    .portfolio-title {
+        width:90%;
+    }
+    /* #bg-about {
         grid-template-columns: 90%;
         grid-template-rows: 300px 400px ;
         row-gap: 1em;
         height: 730px;
         justify-content: center;
         background: white;
-    }
+    } */
     #about-text {
         justify-self: center;
     }
     #project-section {
-        margin: 0px auto;
+        margin: 1em auto;
         width: 90%;
     }
     .project-tile {
         width: 100%;
-        height: 490px;
+        height: auto;
         flex-direction: column;
     }
     .project-img {
@@ -174,9 +370,6 @@ input {
     }
     .project-description {
         width: 90%;
-    }
-    #contact-form {
-        width: 80%;
     }
     #contact-info {
         padding-left:0px ;
@@ -187,8 +380,26 @@ input {
     .remove {
         display:none;
     }
+    .contact-content {
+        width: 100%;
+        flex-direction: column;
+    }
+    #contact-form {
+        width: 430px;
+        padding: 2em 1em;
+    }
+    #contact-info {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .sm-links {
+        width: 100%;
+    }
 }
 @media only screen and (max-width:450px) {
+    .about {
+        margin-bottom: 1em;
+    }
     #nav-section {
         display: flex;
         flex-direction: column;
@@ -202,15 +413,36 @@ input {
         align-items: center;
         padding-left: 0px;
     } 
-    #bg-about {
-        grid-template-rows: 200px 400px ;
-        row-gap: 1em;
-        height: 600px;
+    #about {
+        width: 90%;
+    }
+    #about p {
+        line-height: 1.7em;
+    }
+    #project-section {
+        margin: 2em 0 3em;
+        width: 100%;
+    }
+    .portfolio-title {
+        width: 90%;
+    }
+    .project-description {
+        width: 100%;
     }
     .project-tile {
-        height: 430px;
+        height: auto;
     }
     .lmsproject {
-        height: 450px !important;
+        height: auto;
+    }
+    .contact-content {
+        width: 100%;
+    }
+    #contact-form {
+        width: 300px;
+        padding: 2em 1em;
+    }
+    .new-line {
+        display: block;
     }
 }
