@@ -29,10 +29,7 @@ body {
     color: #e01860;
     font-size: 1.2em;
 }
-#profilepic {
-    display:grid;
-    height: 100%;
-}
+
 #profileimg {
     border: 5px solid black;
     border-left: none;
