@@ -20,7 +20,7 @@ body {
     align-self: center;
     font-size: 1.4em;
     text-decoration: none;
-    color:rgba(224, 24, 96, 0.7)
+    color: #e01860;
 }
 
 .nav-link {
@@ -36,10 +36,6 @@ body {
 #profileimg {
     border: 5px solid black;
     border-left: none;
-}
-
-main {
-    background: rgba(240, 238, 238, 0.5);
 }
 
 #intro {
@@ -110,7 +106,7 @@ main {
 }
 
 #about h2,
-#portfolio h2,
+#projects h2,
 #contact h2 {
     display: inline;
 }
@@ -271,6 +267,7 @@ input:focus {
 @media only screen and (max-width:992px) {
     button:focus {
         outline: none;
+        box-shadow: none !important;
     }
     #intro {
         padding-bottom: 0;
@@ -384,6 +381,7 @@ input:focus {
         width: 100%;
         flex-direction: column;
     }
+    
     #contact-form {
         width: 430px;
         padding: 2em 1em;
@@ -435,6 +433,12 @@ input:focus {
     .lmsproject {
         height: auto;
     }
+    .connect {
+        margin: 1em auto;
+    }
+    .contact a {
+        font-size: 1.5em;
+    }
     .contact-content {
         width: 100%;
     }
@@ -444,5 +448,14 @@ input:focus {
     }
     .new-line {
         display: block;
+    }
+}
+
+@media only screen and (max-width:302px) {
+    .navbar-toggler {
+        margin-top: 10px;
+    }
+    .top {
+        padding: 2px;
     }
 }
