@@ -327,7 +327,7 @@ input:focus {
         margin: 0;
         border-radius: 0;
         padding: 2em 1em;
-        background-color: #e01860;
+        background-color:  rgba(224, 24, 96, 0.9);
     }
     #bg-intro {
         grid-template-rows: auto;
